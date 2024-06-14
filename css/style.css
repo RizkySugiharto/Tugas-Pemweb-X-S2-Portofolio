@@ -1,0 +1,78 @@
+/* Additional CSS */
+:root {
+    --rgb-primary: 146, 144, 195;
+    --rgb-secondary: 27, 26, 85;
+    --rgb-body-secondary: 7, 15, 43;
+    --rgb-body-tertiary: 31, 37, 68;
+}
+
+html {
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+
+body {
+    --bs-body-color: rgb(var(--rgb-primary));
+}
+
+hr {
+    color: rgb(var(--rgb-primary)) !important;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}  
+
+/* Bootstrap Customization */
+:root {
+    --bs-primary: rgb(var(--rgb-primary));
+    --bs-primary-rgb: var(--rgb-primary);
+    --bs-secondary: rgb(var(--rgb-secondary));
+    --bs-secondary-rgb: var(--rgb-secondary);
+    --bs-secondary-bg: rgb(var(--rgb-body-secondary));
+    --bs-secondary-bg-rgb: var(--rgb-body-secondary);
+    --bs-tertiary-bg: rgb(var(--rgb-body-tertiary));
+    --bs-tertiary-bg-rgb: var(--rgb-body-tertiary);
+    --bs-emphasis-color: rgb(var(--rgb-primary));
+    --bs-emphasis-color-rgb: var(--rgb-primary);
+}
+
+.navbar {
+    --bs-navbar-brand-color: rgb(var(--rgb-primary));
+    --bs-navbar-brand-hover-color: rgb(var(--rgb-primary));
+    --bs-navbar-toggler-icon-bg: url(
+        "data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgb%28146, 144, 195%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"
+    );
+    --bs-navbar-toggler-border-color: rgba(var(--bs-emphasis-color-rgb), 1);
+}
+
+.navbar-nav {
+    --bs-nav-link-color: rgba(var(--rgb-primary), 0.9);
+    --bs-nav-link-hover-color: rgba(var(--rgb-primary), 1);
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+.btn-outline-primary {
+    --bs-btn-color: rgb(var(--rgb-primary));
+    --bs-btn-border-color: rgb(var(--rgb-primary));
+    --bs-btn-hover-bg: rgb(var(--rgb-primary));
+    --bs-btn-hover-border-color: rgb(var(--rgb-primary));
+    --bs-btn-active-bg: rgb(var(--rgb-primary));
+    --bs-btn-active-border-color: rgb(var(--rgb-primary));
+    --bs-btn-disabled-color: rgb(var(--rgb-primary));
+    --bs-btn-disabled-border-color: rgb(var(--rgb-primary));
+    --bs-btn-hover-color: rgb(var(--rgb-body-tertiary));
+    --bs-btn-active-color: rgb(var(--rgb-body-tertiary));
+}
+
+.card {
+    --bs-card-border-color: rgb(var(--rgb-primary));
+}
+
+.card-header {
+    --bs-card-border-color: rgb(var(--rgb-primary));
+}
